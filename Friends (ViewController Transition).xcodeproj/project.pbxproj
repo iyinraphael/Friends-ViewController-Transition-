@@ -14,6 +14,9 @@
 		EB3088C821E7E91D00852E18 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3088C721E7E91D00852E18 /* FriendViewController.swift */; };
 		EB3088CA21E7E93500852E18 /* FriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3088C921E7E93500852E18 /* FriendTableViewController.swift */; };
 		EB3088CC21E7EA1000852E18 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3088CB21E7EA1000852E18 /* FriendTableViewCell.swift */; };
+		EB3088CE21E7EB1300852E18 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3088CD21E7EB1300852E18 /* Friend.swift */; };
+		EB3088D021E7EB8E00852E18 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3088CF21E7EB8E00852E18 /* FriendController.swift */; };
+		EB3088D221E7EC0D00852E18 /* daughter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB3088D121E7EC0D00852E18 /* daughter.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		EB3088C721E7E91D00852E18 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		EB3088C921E7E93500852E18 /* FriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewController.swift; sourceTree = "<group>"; };
 		EB3088CB21E7EA1000852E18 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		EB3088CD21E7EB1300852E18 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		EB3088CF21E7EB8E00852E18 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
+		EB3088D121E7EC0D00852E18 /* daughter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daughter.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				EB3088C421E7E89B00852E18 /* ViewController */,
 				EB3088B221E7DEE400852E18 /* AppDelegate.swift */,
 				EB3088B621E7DEE400852E18 /* Main.storyboard */,
+				EB3088D121E7EC0D00852E18 /* daughter.jpg */,
 				EB3088B921E7DEE600852E18 /* Assets.xcassets */,
 				EB3088BB21E7DEE600852E18 /* LaunchScreen.storyboard */,
 				EB3088BE21E7DEE600852E18 /* Info.plist */,
@@ -83,6 +90,7 @@
 		EB3088C521E7E8D000852E18 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB3088CF21E7EB8E00852E18 /* FriendController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -90,6 +98,7 @@
 		EB3088C621E7E8E500852E18 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB3088CD21E7EB1300852E18 /* Friend.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +164,7 @@
 				EB3088BD21E7DEE600852E18 /* LaunchScreen.storyboard in Resources */,
 				EB3088BA21E7DEE600852E18 /* Assets.xcassets in Resources */,
 				EB3088B821E7DEE400852E18 /* Main.storyboard in Resources */,
+				EB3088D221E7EC0D00852E18 /* daughter.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB3088C821E7E91D00852E18 /* FriendViewController.swift in Sources */,
+				EB3088D021E7EB8E00852E18 /* FriendController.swift in Sources */,
 				EB3088B321E7DEE400852E18 /* AppDelegate.swift in Sources */,
+				EB3088CE21E7EB1300852E18 /* Friend.swift in Sources */,
 				EB3088CA21E7E93500852E18 /* FriendTableViewController.swift in Sources */,
 				EB3088CC21E7EA1000852E18 /* FriendTableViewCell.swift in Sources */,
 			);
