@@ -27,6 +27,7 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView
         
         let destinationViewFrame = transitionContext.finalFrame(for: toVC)
+        
         containerView.addSubview(toView)
         toView.frame = destinationViewFrame
         toView.alpha = 0
@@ -52,6 +53,12 @@ class ImageTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         
         containerView.addSubview(animationLabel)
         containerView.addSubview(animationImage)
+        
+        fromVc.nameLabel?.alpha = 0.0
+        fromVc.imageView?.alpha = 0.0
+        
+        toVC.imageView.alpha = 0.0
+        toVC.nameLabel.alpha = 0.0
         
         toView.layoutIfNeeded()
         

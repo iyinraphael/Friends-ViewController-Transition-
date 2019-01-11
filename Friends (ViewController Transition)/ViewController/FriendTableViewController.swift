@@ -19,6 +19,7 @@ class FriendTableViewController: UITableViewController, UIViewControllerTransiti
         super.viewDidLoad()
         friendController.createFriend()
         navigationController?.delegate = naviagtionControllerDelegate
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -47,8 +48,10 @@ class FriendTableViewController: UITableViewController, UIViewControllerTransiti
         
         
         if segue.identifier == "showSegue"{
-            guard let detailVc = segue.destination as? FriendViewController else {return}
-            detailVc.friend = friendController.friends[0]
+            guard let detailVc = segue.destination as? FriendViewController,
+            let index = tableView.indexPathForSelectedRow else {return}
+            let friend = friendController.friends[index.row]
+            detailVc.friend = friend
             detailVc.navigationDelagate = naviagtionControllerDelegate
         }
     }
