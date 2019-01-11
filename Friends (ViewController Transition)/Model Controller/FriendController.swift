@@ -13,7 +13,7 @@ class FriendController{
     
     var friends = [Friend]()
     
-    func createFriend(name: String = "Demi", jobTitle:String = "Daughter", image:UIImage = UIImage(contentsOfFile: "daughter.jpg")!) {
+    func createFriend(name: String = "Demi", jobTitle:String = "Daughter", image:UIImage = UIImage(named: "daughter.jpg")!) {
         
         let friend = Friend(name: name, image: image, jobTitle: jobTitle)
         friends.append(friend)
